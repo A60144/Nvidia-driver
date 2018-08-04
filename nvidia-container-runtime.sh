@@ -5,6 +5,7 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 sudo tee /etc/docker/daemon.json <<EOF
 {
+    "default-runtime": "nvidia",
     "runtimes": {
         "nvidia": {
             "path": "/usr/bin/nvidia-container-runtime",
@@ -14,3 +15,4 @@ sudo tee /etc/docker/daemon.json <<EOF
 }
 EOF
 sudo pkill -SIGHUP dockerd
+docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
