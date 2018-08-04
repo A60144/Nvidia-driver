@@ -126,3 +126,11 @@ yum install gcc kernel-devel-$(uname -r)
 ![](https://i.imgur.com/ZIBjwgJ.png)
 
 
+# Refence
+* NV Docker :https://github.com/NVIDIA/nvidia-docker/tree/master#centos-7docker-ce-rhel-7475-docker-ce-amazon-linux-12
+* nvidia-container-runtime : 
+https://github.com/NVIDIA/nvidia-container-runtime#centos-distributions
+* K8S Device-plugin :
+https://github.com/NVIDIA/k8s-device-plugin#running-gpu-jobs
+* ansible install nvidia driver : https://github.com/LIP-Computing/ansible-role-nvidia
+
