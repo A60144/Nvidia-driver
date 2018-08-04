@@ -44,9 +44,9 @@ https://github.com/NVIDIA/nvidia-container-runtime#centos-distributions
 * nvidia-docker: 
 https://github.com/NVIDIA/nvidia-docker
 ```shell=
-#nvidia-container-runtime
+# Install nvidia-container-runtime
 wget -O - https://bit.ly/2vAv4Mt|sh
-#nvidia-docker
+# Install nvidia-docker
 wget -O - https://bit.ly/2vjZUK0|sh
 ```
 
