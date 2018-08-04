@@ -16,4 +16,4 @@ sudo tee /etc/docker/daemon.json <<EOF
 }
 EOF
 sudo pkill -SIGHUP dockerd
-docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
+# docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
