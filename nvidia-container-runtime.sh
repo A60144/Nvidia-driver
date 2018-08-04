@@ -6,7 +6,6 @@ ExecStart=/usr/bin/dockerd --host=fd:// --add-runtime=nvidia=/usr/bin/nvidia-con
 EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
-
 sudo tee /etc/docker/daemon.json <<EOF
 {
     "runtimes": {
