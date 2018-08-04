@@ -108,7 +108,7 @@ systemctl restart kubelet
 ```
 
 
-* Issue Fix
+Issue Fix
 ===
 1. GCC Error
 Q: unable to find the development tool cc in your path
