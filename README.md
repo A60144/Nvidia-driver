@@ -38,28 +38,18 @@ nvidia-smi
 
 參考: https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#introduction
 
-============= 下面請忽略 =============
-
-
-
-
-
-
-
-
-
-
-
-
-
-Nvidia docker
-===
-* Refence by https://github.com/NVIDIA/nvidia-docker
+* Nvidia docker
+* nvidia-container-runtime : 
+https://github.com/NVIDIA/nvidia-container-runtime#centos-distributions
+* nvidia-docker: 
+https://github.com/NVIDIA/nvidia-docker
 ```shell=
-https://bit.ly/2vjZUK0
+#
+wget -O - https://bit.ly/2vAv4Mt|sh
+wget -O - https://bit.ly/2vjZUK0|sh
 ```
 
-
+============= 下面請忽略 =============
 K8S Master api feature gate open
 ===
 ```shell=
