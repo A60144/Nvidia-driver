@@ -12,15 +12,15 @@ Check GPU Device model
 lspci | grep -i nvidia
 ```
 
-Install Nvidia-smi
-Download the Driver for centos 7
-Run version : http://us.download.nvidia.com/XFree86/Linux-x86_64/390.67/NVIDIA-Linux-x86_64-390.67.run
+* Install Nvidia-smi
+* Download the Driver for centos 7
+* Run version : http://us.download.nvidia.com/XFree86/Linux-x86_64/390.67/NVIDIA-Linux-x86_64-390.67.run
 
 ```shell=
 https://bit.ly/2MlKCLz
 ```
 
-Install Cuda
+* Install Cuda
 ```shell=
 wget https://developer.download.nvidia.com/compute/cuda/repos/rhel7/x86_64/cuda-repo-rhel7-9.2.88-1.x86_64.rpm
 sudo rpm -i cuda-repo-rhel7-9.2.88-1.x86_64.rpm
@@ -52,9 +52,9 @@ nvidia-smi
 
 
 
-Step 3 Nvidia docker
+Nvidia docker
 ===
-Refence by https://github.com/NVIDIA/nvidia-docker
+* Refence by https://github.com/NVIDIA/nvidia-docker
 ```shell=
 sudo apt-get purge -y nvidia-docker
 sudo docker volume ls -q -f driver=nvidia-docker | xargs -r -I{} -n1 docker ps -q -a -f volume={} | xargs -r docker rm -f
@@ -68,7 +68,7 @@ docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 ```
 
 
-Step 5 K8S Master api feature gate open
+K8S Master api feature gate open
 ===
 ```shell=
 vim /etc/systemd/system/kubelet.service.d/10-kubelet.conf 
@@ -90,7 +90,7 @@ Node will show gpu cnt
 ![](https://i.imgur.com/Bd9bB3j.png)
 
 
-Step 6 K8S Minion(GPU) feature gate open
+K8S Minion(GPU) feature gate open
 ===
 ```shell=
 vim /etc/systemd/system/kubelet.service.d/10-kubelet.conf 
@@ -108,7 +108,7 @@ systemctl restart kubelet
 ```
 
 
-Issue Fix
+* Issue Fix
 ===
 1. GCC Error
 Q: unable to find the development tool cc in your path
