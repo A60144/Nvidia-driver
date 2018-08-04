@@ -6,4 +6,4 @@ sudo yum install -y nvidia-docker2
 sudo yum install -y nvidia-docker2 --skip-broken
 sudo pkill -SIGHUP dockerd
 docker run --rm nvidia/cuda nvidia-smi
-#sudo systemctl start kubelet
+sudo systemctl start kubelet
