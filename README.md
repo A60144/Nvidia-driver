@@ -19,9 +19,6 @@ lspci | grep -i nvidia
 ```shell=
 https://bit.ly/2MlKCLz
 ```
-
-
-
 參考: https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#introduction
 
 * Nvidia docker
@@ -40,10 +37,16 @@ wget -O - https://bit.ly/2vjZUK0|sh
 * K8S Device-plugin :
 https://github.com/NVIDIA/k8s-device-plugin#running-gpu-jobs
 ```shell=
+# Device-plugin setting for all master
 wget -O - https://bit.ly/2LYyPpq|sh
+
+# Download sample gpu yml
+wget -O gpu-sample.yml https://bit.ly/2AN3u4O
+kubectl create -f gpu-sample.yml
 ```
 Node will show gpu cnt
 ![](https://i.imgur.com/Bd9bB3j.png)
+
 
 ============= 下面請忽略 =============
 * Install Cuda
