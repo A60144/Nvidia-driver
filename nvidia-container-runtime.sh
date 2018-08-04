@@ -1,4 +1,5 @@
 sudo systemctl stop kubelet
+sudo systemctl stop docker
 sudo yum install -y nvidia-container-runtime
 sudo mkdir -p /etc/systemd/system/docker.service.d
 sudo systemctl daemon-reload
