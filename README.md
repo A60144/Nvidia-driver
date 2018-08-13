@@ -27,9 +27,13 @@ https://github.com/NVIDIA/nvidia-container-runtime#centos-distributions
 * nvidia-docker: 
 https://github.com/NVIDIA/nvidia-docker
 ```shell=
+# Just for GPU Node
+
 # Install nvidia-container-runtime
+# shell https://bit.ly/2vAv4Mt
 wget -O - https://bit.ly/2vAv4Mt|sh
 # Install nvidia-docker
+# shell https://bit.ly/2vjZUK0
 wget -O - https://bit.ly/2vjZUK0|sh
 ```
 
@@ -37,7 +41,9 @@ wget -O - https://bit.ly/2vjZUK0|sh
 * K8S Device-plugin :
 https://github.com/NVIDIA/k8s-device-plugin#running-gpu-jobs
 ```shell=
+# Just for Master Node ,Version older than v1.11
 # Device-plugin setting for all master
+# shell https://bit.ly/2LYyPpq
 wget -O - https://bit.ly/2LYyPpq|sh
 
 # Download sample gpu yml
