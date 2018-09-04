@@ -16,3 +16,9 @@ spec:
       resources:
         limits:
           nvidia.com/gpu: 1 # requesting 2 GPUs
+    - name: tensorflow-container
+      image: tensorflow/tensorflow:latest-gpu
+      command: [ "/bin/bash", "-c", "sleep 2147483647" ]
+      resources:
+        limits:
+          nvidia.com/gpu: 1 # requesting 2 GPUs
