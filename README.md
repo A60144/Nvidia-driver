@@ -1,10 +1,3 @@
-# Nvidia-driver
-
-照這邊執行就可以了
-===
-
-https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07#install-dependencies
-
 Update date : 2018/07/03
 
 Check GPU Device model
